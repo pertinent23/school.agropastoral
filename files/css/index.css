@@ -1,0 +1,237 @@
+:root{
+    --text-gradient: -webkit-linear-gradient( 120deg, var( --forest-green-traditional ), var( --electric-lime ) ), 
+    linear-gradient( 120deg, var( --forest-green-traditional ), var( --electric-lime ) );
+}
+
+.global{
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.global .slide{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.slide-1-diasporama-image,
+.slide-1-diasporama-container{
+    clip-path: ellipse( 170% 60% at 20% 30% );
+    clip-rule: evenodd;
+    overflow: hidden;
+    clip-path: none;
+}
+
+.slide-1-diasporama-image{
+    min-height: 100%;
+    min-width: 100%;
+    height: 110%;
+    width: 110%;
+    background-size: cover;
+    background-position: 50% 50%;
+    animation: global-diasporama 20s ease-in-out 0s infinite;
+    position: absolute;
+    background-clip: border-box;
+}
+
+@keyframes global-diasporama {
+    10%, 35%, 60%, 85%{
+        transform: scale( 1.2 );
+    }
+
+    15%, 40%, 65%, 90%{
+        transform: scale( 1 );
+    }
+
+    0%, 20%{
+        background-image: url( './../img/illustrations/countryside-people-working-field.jpg' );
+    }
+
+    25%, 45%{
+        background-image: url( './../img/illustrations/medium-shot-kid-working-cornfield.jpg' ); 
+    }
+
+    50%, 70%{
+        background-image: url( './../img/illustrations/impala-5232026_1920.jpg' ); 
+    }
+
+    75%, 95%, 100%{
+        background-image: url( './../img/illustrations/rhino-4997858_1920.jpg' );
+    }
+}
+
+.slide-1-diasporama-infos{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgba( 0, 75, 35, 0.9 );
+}
+
+.slide-1-diasporama-infos .slide-1-diasporama-info-item{
+    width: 100%;
+}
+
+.slide-1-diasporama-infos .slide-1-diasporama-info-item img{
+    width: calc( 100% - 30px );
+    max-width: 350px;
+}
+
+.slide-1-diasporama-infos .slide-1-diasporama-info-item.item-2{
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.slide-1-diasporama-infos .slide-1-diasporama-info-item.item-2 .slide-1-description{
+    font-size: 1.5em;
+    padding: 40px 30px;
+    padding-top: 0px;
+    text-align: center;
+    color: var( --cultured-2 );
+    opacity: 0.8;
+}
+
+.slide-1-diasporama-infos .slide-1-diasporama-info-item.item-2 .btn{
+    background-color: #FFFFFF;
+    padding: 18px 35px;
+    padding-right: 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: var( --forest-green-traditional );
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.slide-1-diasporama-infos .slide-1-diasporama-info-item.item-2 .btn i{
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.slide-1-title{
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    background-color: #FFFFFF;
+    height: 130px;
+    clip-path: polygon( 0% 100%, 0% 70%, 80% 40%, 100% 0%, 100% 100%, 0% 100% );
+    justify-content: flex-end;
+}
+
+.slide-1-title .slide-1-title-container{
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    color: var( --forest-green-traditional );
+}
+
+.slide-1-title i{
+    font-size: 28px;
+    margin-right: 15px;
+}
+
+.slide-1-title span{
+    font-size: 1.8em;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: plento;
+    letter-spacing: 0.18em;
+}
+
+@media screen and ( min-width: 768px ) {
+
+    .slide-1-diasporama-infos .slide-1-diasporama-info-item img{
+        max-width: 450px;
+    }
+
+    .slide-1-diasporama-infos{
+        flex-direction: row;
+    }
+
+    .slide-1-diasporama-infos .slide-1-diasporama-info-item.item-2{
+        align-items: flex-start;
+    }
+
+    .slide-1-diasporama-infos .slide-1-diasporama-info-item.item-2 .slide-1-description{
+        font-size: 3.5em;
+        padding-left: 0px;
+        text-align: start;
+    }
+
+    .slide-1-title{
+        position: absolute;
+        bottom: 0px;
+        text-align: center;
+        background-color: var( --cultured );
+        height: 200px;
+        clip-path: polygon( 0% 100%, 0% 90%, 85% 50%, 100% 0%, 100% 100%, 0% 100% );
+        justify-content: flex-end;
+    }
+
+    .slide-1-title .slide-1-title-container{
+        right: 65px;
+        bottom: 20px;
+    }
+
+    .slide-1-title i{
+        font-size: 40px;
+        margin-right: 25px;
+    }
+
+    .slide-1-title span{
+        font-size: 2.8em;
+    }
+}
+
+.slide-2-container{
+    background-color: var( --cultured );
+    height: 100%;
+    width: 100%;
+}
+
+.slide-2-items.item-1{
+    flex: 1;
+    width: 100%;
+}
+
+.slide-2-item-data-container{
+    width: calc( 100% - 40px );
+    height: 100%;
+    min-height: 450px;
+}
+
+.slide-2-item-decorator-container{
+    height: 450px;
+    width: 450px;
+}
+
+.slide-2-item-decorator-container img{
+    width: 1300px;
+}
+
+.slide-2-item-description-container{
+    flex: 1;
+}
+
+.slide-2-items.item-2{
+    height: 100%;
+    padding: 0px 30px;
+    width: auto;
+}
+
+.slide-2-item-content-buttons{
+    justify-content: space-between;
+    height: 280px;
+    width: auto;
+}
+
+.slide-2-item-content-buttons a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.slide-2-item-content-buttons a i{
+    font-size: 50px;
+    color: var( --forest-green-traditional );
+}
