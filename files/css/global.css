@@ -73,6 +73,10 @@ body{
     display: -webkit-flex;
 }
 
+.d-none{
+    display: none;
+}
+
 .w-100{
     width: 100%;
 }
@@ -91,6 +95,10 @@ body{
 
 .justify-content-end{
     justify-content: flex-end;
+}
+
+.justify-content-between{
+    justify-content: space-between;
 }
 
 .align-items-center{
@@ -119,4 +127,13 @@ body{
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+}
+
+.text-break{
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
