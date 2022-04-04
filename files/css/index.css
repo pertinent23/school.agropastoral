@@ -514,6 +514,7 @@
     border: 3px solid #FFFFFF;
     overflow: hidden;
     text-decoration: none;
+    transition: background-color 0.1s ease 0.1s;
 }
 
 .slide-3-button span{
@@ -544,6 +545,10 @@
     font-weight: 600;
     z-index: 25;
     transition-duration: 0.3s;
+}
+
+.slide-3-button:hover{
+    background-color: var( --cultured );
 }
 
 .slide-3-button:hover span{
