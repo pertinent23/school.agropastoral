@@ -70,6 +70,23 @@
     background-color: rgba( 0, 75, 35, 0.9 );
 }
 
+.slide-1-menu-button{
+    position: absolute;
+    padding: 17px 20px;
+    border-radius: 100%;
+    left: 20px;
+    top: 20px;
+    background-color: var( --cultured );
+    text-decoration: none;
+    z-index: 25;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+.slide-1-menu-button i{
+    font-size: 30px;
+    color: var( --forest-green-traditional );
+}
+
 .slide-1-diasporama-infos .slide-1-diasporama-info-item{
     width: 100%;
 }
