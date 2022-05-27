@@ -38,7 +38,7 @@
 }
   
 ::-webkit-scrollbar-thumb {
-    background-color: #000000;
+    background-color: var( --forest-green-traditional );
     opacity: 0.65;
     transition-duration: 0.1s;
     border-radius: 6px;
